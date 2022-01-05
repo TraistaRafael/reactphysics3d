@@ -122,7 +122,7 @@ class RaycastCallback {
          * @param raycastInfo Information about the raycast hit
          * @return Value that controls the continuation of the ray after a hit
          */
-        virtual decimal notifyRaycastHit(const RaycastInfo& raycastInfo)=0;
+		virtual decimal notifyRaycastHit(const RaycastInfo& raycastInfo) { return 0; };
 
 };
 

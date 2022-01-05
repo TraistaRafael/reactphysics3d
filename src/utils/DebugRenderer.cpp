@@ -478,3 +478,9 @@ void DebugRenderer::onContact(const CollisionCallback::CallbackData& callbackDat
 		}
 	}
 }
+
+
+const decimal DebugRenderer::DEFAULT_CONTACT_POINT_SPHERE_RADIUS = decimal(0.1);
+
+/// Default radius of the sphere displayed to represent contact points
+const decimal DebugRenderer::DEFAULT_CONTACT_NORMAL_LENGTH = decimal(1.0);

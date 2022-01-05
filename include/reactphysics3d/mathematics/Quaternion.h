@@ -293,7 +293,7 @@ RP3D_FORCE_INLINE decimal Quaternion::dot(const Quaternion& quaternion) const {
 
 // Return true if the values are not NAN OR INF
 RP3D_FORCE_INLINE bool Quaternion::isFinite() const {
-    return std::isfinite(x) && std::isfinite(y) && std::isfinite(z) && std::isfinite(w);
+    return std::isfinite((double) x) && std::isfinite((double)y) && std::isfinite((double)z) && std::isfinite((double)w);
 }
 
 // Return true if it is a unit quaternion

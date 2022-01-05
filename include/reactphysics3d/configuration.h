@@ -104,15 +104,15 @@ const decimal DECIMAL_LARGEST = std::numeric_limits<decimal>::max();
 const decimal MACHINE_EPSILON = std::numeric_limits<decimal>::epsilon();
 
 /// Pi constant
-constexpr decimal PI_RP3D = decimal(3.141592653589);
+const decimal PI_RP3D = decimal(3.141592653589);
 
 /// 2*Pi constant
-constexpr decimal PI_TIMES_2 = decimal(6.28318530);
+const decimal PI_TIMES_2 = decimal(6.28318530);
 
 /// In the broad-phase collision detection (dynamic AABB tree), the AABBs are
 /// inflated by a constant percentage of its size to allow the collision shape to move a little bit
 /// without triggering a large modification of the tree each frame which can be costly
-constexpr decimal DYNAMIC_TREE_FAT_AABB_INFLATE_PERCENTAGE = decimal(0.08);
+const decimal DYNAMIC_TREE_FAT_AABB_INFLATE_PERCENTAGE = decimal(0.08);
 
 /// Maximum number of contact points in a narrow phase info object
 constexpr uint8 NB_MAX_CONTACT_POINTS_IN_NARROWPHASE_INFO = 16;
@@ -127,7 +127,7 @@ constexpr uint8 NB_MAX_POTENTIAL_CONTACT_MANIFOLDS = 4 * NB_MAX_CONTACT_MANIFOLD
 constexpr uint16 NB_MAX_CONTACT_POINTS_IN_POTENTIAL_MANIFOLD = 256;
 
 /// Distance threshold to consider that two contact points in a manifold are the same
-constexpr decimal SAME_CONTACT_POINT_DISTANCE_THRESHOLD = decimal(0.01);
+const decimal SAME_CONTACT_POINT_DISTANCE_THRESHOLD = decimal(0.01);
 
 /// Current version of ReactPhysics3D
 const std::string RP3D_VERSION = std::string("0.9.0");

@@ -26,13 +26,16 @@
 #ifndef REACTPHYSICS3D_DECIMAL_H
 #define	REACTPHYSICS3D_DECIMAL_H
 
+#include "r128.h"
+
 /// ReactPhysiscs3D namespace
 namespace reactphysics3d {
 
 #if defined(IS_RP3D_DOUBLE_PRECISION_ENABLED)   // If we are compiling for double precision
     using decimal = double;
 #else                                   // If we are compiling for single precision
-    using decimal = float;
+    //using decimal = float;
+	using decimal = R128;
 #endif
 
 }

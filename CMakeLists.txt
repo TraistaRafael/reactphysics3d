@@ -25,8 +25,8 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeModules)
 enable_testing()
 
 # Options
-option(RP3D_COMPILE_TESTBED "Select this if you want to build the testbed application with demos" OFF)
-option(RP3D_COMPILE_TESTS "Select this if you want to build the unit tests" OFF)
+option(RP3D_COMPILE_TESTBED "Select this if you want to build the testbed application with demos" ON)
+option(RP3D_COMPILE_TESTS "Select this if you want to build the unit tests" ON)
 option(RP3D_PROFILING_ENABLED "Select this if you want to compile for performanace profiling" OFF)
 option(RP3D_CODE_COVERAGE_ENABLED "Select this if you need to build for code coverage calculation" OFF)
 option(RP3D_DOUBLE_PRECISION_ENABLED "Select this if you want to compile using double precision floating values" OFF)

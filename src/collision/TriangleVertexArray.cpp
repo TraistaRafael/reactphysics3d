@@ -127,7 +127,7 @@ TriangleVertexArray::~TriangleVertexArray() {
 void TriangleVertexArray::computeVerticesNormals() {
 
     // Allocate memory for the vertices normals
-    float* verticesNormals = new float[mNbVertices * 3];
+    decimal* verticesNormals = new decimal[mNbVertices * 3];
 
     // Init vertices normals to zero
     for (uint32 i=0; i<mNbVertices * 3; i++) {

@@ -60,7 +60,7 @@ void JointsScene::updatePhysics() {
 
     // Update the motor speed of the Slider Joint (to move up and down)
     double motorSpeed = 2.0 * std::cos(mEngineSettings.elapsedTime.count() * 1.5);
-    mSliderJoint->setMotorSpeed(rp3d::decimal(motorSpeed));
+    //mSliderJoint->setMotorSpeed(rp3d::decimal(motorSpeed));
 
     SceneDemo::updatePhysics();
 }
@@ -219,7 +219,7 @@ void JointsScene::createBallAndSocketJoints() {
         }
 
         // Add some angular velocity damping
-        mBallAndSocketJointChainBoxes[i]->getRigidBody()->setAngularDamping(rp3d::decimal(0.2));
+       // mBallAndSocketJointChainBoxes[i]->getRigidBody()->setAngularDamping(rp3d::decimal(0.2));
 
         // Change the material properties of the rigid body
         rp3d::Material& material = mBallAndSocketJointChainBoxes[i]->getCollider()->getMaterial();

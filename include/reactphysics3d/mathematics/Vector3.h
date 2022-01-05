@@ -245,7 +245,7 @@ RP3D_FORCE_INLINE bool Vector3::isUnit() const {
 
 // Return true if the values are not NAN OR INF
 RP3D_FORCE_INLINE bool Vector3::isFinite() const {
-    return std::isfinite(x) && std::isfinite(y) && std::isfinite(z);
+    return std::isfinite((double)x) && std::isfinite((double)y) && std::isfinite((double)z);
 }
 
 // Return true if the vector is the zero vector
