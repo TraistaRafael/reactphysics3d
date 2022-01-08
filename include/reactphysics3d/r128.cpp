@@ -1676,3 +1676,23 @@ void r128Ceil(R128 *dst, const R128 *v)
 	dst->lo = 0;
 	R128_DEBUG_SET(dst);
 }
+
+static bool operator<(const R128 &rhs, std::uint32_t rhs_raw)
+{
+	return rhs < R128(rhs_raw);
+}
+
+static bool operator>(const R128 &rhs, std::uint32_t rhs_raw)
+{
+	return rhs > R128(rhs_raw);
+}
+
+static bool operator<=(const R128 &rhs, std::uint32_t rhs_raw)
+{
+	return rhs <= R128(rhs_raw);
+}
+
+static bool operator>(std::uint32_t lhs_raw, const R128 &rhs)
+{
+	return R128(lhs_raw) > rhs;
+}

@@ -614,67 +614,7 @@ static inline bool operator!=(const R128 &lhs, const R128 &rhs)
 }
 
 // ---------------------------------------------------------------------
-// Custom operators 
-//static inline bool operator==(const R128 &lhs, int rhs_raw)
-//{
-//	R128 rhs(rhs_raw);
-//	return lhs.lo == rhs.lo && lhs.hi == rhs.hi;
-//}
-//
-//static inline bool operator!=(const R128 &lhs, float rhs_raw)
-//{
-//	return lhs != R128(rhs_raw);
-//}
-//
-//static inline bool operator>=(const R128 &lhs, float rhs_raw)
-//{
-//	return lhs >= R128(rhs_raw);
-//}
-//
-//static inline bool operator>(const R128 &lhs, int rhs_raw)
-//{
-//	return lhs >= R128(rhs_raw);
-//}
-//
-//static inline R128 operator/(const R128 &lhs, double rhs_raw)
-//{
-//	return lhs / R128(rhs_raw);
-//}
-//
-//static inline R128 operator/(float lhs_raw, const R128 &rhs)
-//{
-//	return R128(lhs_raw) / rhs;
-//}
-//
-//static inline R128 operator/(const R128 &lhs, float rhs_raw)
-//{
-//	return lhs / R128(rhs_raw);
-//}
-//
-//static inline R128 operator-(float lhs_raw, const R128 &rhs)
-//{
-//	return R128(lhs_raw) - rhs;
-//}
-//
-//static inline R128 operator*(const R128 &lhs, float rhs_raw)
-//{
-//	return lhs * R128(rhs_raw);
-//}
-//
-//static inline R128 operator*(double lhs_raw, const R128 &rhs)
-//{
-//	return R128(lhs_raw) * rhs;
-//}
-//
-//static inline R128 operator*(int lhs_raw, const R128 &rhs)
-//{
-//	return R128(lhs_raw) * rhs;
-//}
-//
-
-// ---------------------------------------------------------------------
-
-
+// Other operators
 static inline std::ostream & operator<< (std::ostream &out, R128 const &t)
 {
 	out << (double)t;
@@ -1026,10 +966,10 @@ static inline bool operator<(std::uint32_t lhs_raw, const R128 &rhs)
 	return R128(lhs_raw) < rhs;
 }
 
-static inline bool operator>(std::uint32_t lhs_raw, const R128 &rhs)
-{
-	return R128(lhs_raw) > rhs;
-}
+//static inline bool operator>(std::uint32_t lhs_raw, const R128 &rhs)
+//{
+//	return R128(lhs_raw) > rhs;
+//}
 
 static inline bool operator<=(std::uint32_t lhs_raw, const R128 &rhs)
 {
@@ -1074,20 +1014,20 @@ static inline R128 operator/(const R128 &rhs, std::uint32_t rhs_raw)
 	return rhs / R128(rhs_raw);
 }
 
-static inline bool operator<(const R128 &rhs, std::uint32_t rhs_raw)
-{
-	return rhs < R128(rhs_raw);
-}
-
-static inline bool operator>(const R128 &rhs, std::uint32_t rhs_raw)
-{
-	return rhs > R128(rhs_raw);
-}
-
-static inline bool operator<=(const R128 &rhs, std::uint32_t rhs_raw)
-{
-	return rhs <= R128(rhs_raw);
-}
+//static inline bool operator<(const R128 &rhs, std::uint32_t rhs_raw)
+//{
+//	return rhs < R128(rhs_raw);
+//}
+//
+//static inline bool operator>(const R128 &rhs, std::uint32_t rhs_raw)
+//{
+//	return rhs > R128(rhs_raw);
+//}
+//
+//static inline bool operator<=(const R128 &rhs, std::uint32_t rhs_raw)
+//{
+//	return rhs <= R128(rhs_raw);
+//}
 
 static inline bool operator>=(const R128 &rhs, std::uint32_t rhs_raw)
 {
